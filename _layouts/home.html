@@ -21,13 +21,7 @@ layout: default
       {% endif %}
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
-        {% if site.home_option == "education" %}
-          {% include education.html %}
-        {% elsif site.home_option == "timeline" %}
-          {% include timeline.html %}
-        {% elsif site.home_option =="skills" %}
-        <canvas id="myBarChart" height="50"></canvas>
-        {% endif %}
+        
         <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
     </div>
