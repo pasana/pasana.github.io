@@ -132,7 +132,7 @@ font_awesome_id: 32a2b2a489                       # Register for free at https:/
 # =======================================#        # For more information about these settings, visit https://htmlhead.dev #
 # ------------META TAG SETTINGS----------#
 #========================================#
-google-site-verification:                         #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+google-site-verification:  <meta name="google-site-verification" content="0QBzxkyjm0ivqEQ8e8_5IUlfBaJbjQnUxCQloUFb85k" />                       #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 yandex-verification:                              #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 msvalidate:                                       # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
 alexaVerifyID:                                    # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
