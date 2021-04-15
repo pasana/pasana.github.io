@@ -1,0 +1,26 @@
+- name: Publications
+  id: publications
+  description: My Publications
+  url: #publications.html
+  first: true
+  
+- name: Industry
+  id: industry
+  description: Industry experience
+  content: 
+  url:
+  first: false
+
+- name: Supervision
+  id: supervision
+  description: Master students I supervised
+  content: 
+  url: 
+  first: false
+
+- name: Education
+  id: education
+  description: Education
+  content: 
+  url:
+  first: false

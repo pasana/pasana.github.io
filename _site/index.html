@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Welcome to Anna Liednikova page</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="http://127.0.0.1:4000">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="a minimalistic jekyll theme for academics">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="http://127.0.0.1:4000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Welcome to Anna Liednikova page, a minimalistic jekyll theme for academics">
+<meta property="og:image" content="/assets/img/dumbarton.png">
+<meta property="og:image:alt" content="A minimalistic jekyll theme for academic">
+<meta property="og:description" content="a minimalistic jekyll theme for academics">
+<meta property="og:site_name" content="Welcome to Anna Liednikova page">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aliednik">
+<meta name="twitter:creator" content="@aliednik">
+<meta name="twitter:url" content="http://127.0.0.1:4000">
+<meta name="twitter:title" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:description" content="a minimalistic jekyll theme for academics">
+<meta name="twitter:image" content="/assets/img/dumbarton.png">
+<meta name="twitter:image:alt" content="A minimalistic jekyll theme for academic">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body>
+    <nav class="navbar navbar-expand-lg text-white" style="background-color:#00334e;">
+  <a class="navbar-brand text-white" href="/index.html"><h4 style="font-family:Courgette;">Welcome to Anna Liednikova page</h4></a>
+  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-caret-down"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        
+              <li class="nav-item">
+                  <a href="about.html" class="nav-link text-white">About</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="/assets/pdf/vitae.pdf" class="nav-link text-white">CV</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="contact.html" class="nav-link text-white">Contact</a>
+              </li>
+        
+    </ul>
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item">
+        <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: White;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/aliednik">
+            <span style="color: White;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+    
+        <a href="https://github.com/pasana">
+            <span style="color: White;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+        <a href="https://www.linkedin.com/in/anna-liednikova">
+            <span style="color: White;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+    
+        <a href="https://www.researchgate.net/profile/">
+            <span style="color: White;">
+                <i class="fab fa-researchgates fa-lg"></i></a>
+            </span>
+
+    
+        <a href="https://www.googlescholar.com/in/">
+            <span style="color: White;">
+                <i class="fab fa-googlescholar fa-lg"></i></a>
+            </span>
+    <i> &nbsp;&nbsp; </i>
+
+</span>
+
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ask me anything" aria-label="Search">
+      <button class="btn btn-light btn-sm my-2 my-sm-0" type="submit">Search</button>
+    </form>  -->
+  </div>
+</nav>
+
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      <!-- ABOUT ME SECTION -->
+<div class="card mx-auto border-0">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      
+        <img src="/assets/img/avatar/cropped.jpg" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
+      
+    </div>
+    <!-- EDUCATION SECTION -->
+    <div class="col-md-8">
+      
+      <div class="card-body animate__animated animate__fadeInRight" style:"height: .5rem;">
+      
+        <h5 class="card-title"></h5>
+        <p class="card-text"><h2 id="hi-im-anna">Hi, I’m Anna</h2>
+<p>I am PhD student at LORIA and ALIAE start-up working on Human-Machine Dialog in the Medical Domain based in Nancy, France. I’ve been working on the similar topic with the same equip during the internship of Erasmus+ exchange program in Mines Nancy.</p>
+
+<p>I have received my master degree in Data Mining in Project Management from Igor Sikorsky Kyiv Polytechnic Institute and IASA department as well as bachelor degree in System Analysis.</p>
+
+<p>During my studies I succeeded to gain industrial experience, especially in data mining, machine learning, natural language processing &amp; understanding techniques. 
+<a href="/about.html" class="highlighted">Read More</a></p>
+
+</p>
+        
+        <p class="card-text"><small class="text-muted"><i>Last updated 2021-04-04</i></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- HOME HIGHLIGHTS SECTION --> 
+<h5 class="card-title text-center mb-3 border-0"></h5>
+
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s" style="max-width: 100%;">
+
+  <div class="card-header" style="background-color:#00334e;">
+    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+      
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="#publications" role="tab" aria-controls="publications}" aria-selected="true">Publications</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link text-light"  href="#industry" role="tab" aria-controls="industry" aria-selected="false">Industry</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link text-light"  href="#supervision" role="tab" aria-controls="supervision" aria-selected="false">Supervision</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link text-light"  href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+          </li>
+        
+      
+    </ul>
+  </div>
+  <div class="card-body">          
+      <div class="tab-content mt-3">
+        
+          
+            
+              <div class="tab-pane active overflow-auto" id="publications" role="tabpanel">
+                <h5 class="card-title text-center" style="font-family:Courgette;">
+                  <a href="/" class="highlighted">My Publications</a></h5>
+                <ul>
+                    
+                      <li> <b> <a href=https://www.aclweb.org/anthology/2020.coling-main.55/> Learning Health-Bots from Training Data that was Automatically Created using Paraphrase Detection and Expert Knowledge </a> </b> 
+                        <p style="margin:0px;"> <i> Anna Liednikova, Philippe Jolivet, Alexandre Durand-Salmon, Claire Gardent
+ </i> </p> 
+                        Proceedings of the International Conference on Computational Linguistics (COLING), 2020 
+                      </li>
+                        
+                      <li> <b> <a href=http://journal.iasa.kpi.ua/article/view/216236> Project risk analysis using text data mining of comments in project management system JIRA </a> </b> 
+                        <p style="margin:0px;"> <i> Anna Liednikova, Petro Bidyuk
+ </i> </p> 
+                        System Research and Information Technologies, 2020 
+                      </li>
+                        
+                    </ul>
+
+              </div>
+            
+          
+        
+            
+              
+              <div class="tab-pane overflow-auto" id="industry" role="tabpanel" aria-labelledby="industry-tab">  
+                <h5 class="card-title text-center" style="font-family:Courgette;">Industry experience</h5>
+                 
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/aliae.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">ALIAE</h5>
+                      <b> February 2019 - ... </b>
+                      <p> Intern -> PhD Researcher
+                      <ul> 
+                        <li> semantic classification </li>
+                        
+                        <li> automated data expansion </li>
+                        
+                      </ul>
+                      
+                      <p>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">python</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">chatbots</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">graphs</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/jooble.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Jooble</h5>
+                      <b> April 2018 - July 2018 </b>
+                      <p> Data Scientist
+                      <ul> 
+                        <li> multi language text topic classification; </li>
+                        
+                        <li> pairwise and pointwise ranking; </li>
+                        
+                        <li> click prediction by text and additional data </li>
+                        
+                      </ul>
+                      
+                      <p>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">python</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">ranking</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">nlp</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/dataroot.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Dataroot</h5>
+                      <b> May 2016 - August 2017 </b>
+                      <p> Intern -> Data Scientist -> Leader Data Scientist
+                      <ul> 
+                        <li> NLP text processing & analysis / information retrieval tasks / topic modeling </li>
+                        
+                        <li> user behavior & path analysis using data mining techniques and graph theory </li>
+                        
+                      </ul>
+                      
+                      <p>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">python</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">big data</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">data mining</span>
+                        
+                      
+                    </div>
+                  </div>
+                              
+              </div>
+            
+          
+        
+            
+              
+              <div class="tab-pane overflow-auto" id="supervision" role="tabpanel" aria-labelledby="supervision-tab">  
+                <h5 class="card-title text-center" style="font-family:Courgette;">Master students I supervised</h5>
+                   <ul>
+                    
+                      <li> <b> Abdelhak Zabour </b> (March 2019 - Sep 2020): 
+                        <p style="margin:0px;"> <b><i> Forecasting user satisfaction using sentiment and emotion analysis </i> </b> </p> 
+                        M2 internship, Master Sciences Cognitives <!-- , with co-supervision of Philippe Jolivet -->
+                      </li>
+                        
+                      <li> <b> Meziane Bellahmer </b> (February 2019 - ...): 
+                        <p style="margin:0px;"> <b><i> Development french version of ComBot </i> </b> </p> 
+                        alternance, Master Sciences Cognitives <!-- , with co-supervision of Philippe Jolivet -->
+                      </li>
+                        
+                      <li> <b> Farnaz Ghassemi </b> (Oct 2020 - Sep 2021): 
+                        <p style="margin:0px;"> <b><i> Medical questionnaire filling from dialogue history </i> </b> </p> 
+                        alternance, Master Sciences Cognitives <!-- , with co-supervision of Philippe Jolivet -->
+                      </li>
+                        
+                      <li> <b> Hadil Chebbi </b> (Oct 2020 - Feb 2021): 
+                        <p style="margin:0px;"> <b><i> Target-based sentiment analysis for a medical chatbot </i> </b> </p> 
+                        3A project, Mines Nancy <!-- , with co-supervision of Claire Gardent -->
+                      </li>
+                        
+                      <li> <b> Farnaz Ghassemi </b> (Oct 2020 - Sep 2020): 
+                        <p style="margin:0px;"> <b><i> Medical follow-up bot from forum conversations </i> </b> </p> 
+                        M1 internship, Master Sciences Cognitives <!-- , with co-supervision of Philippe Jolivet -->
+                      </li>
+                        
+                      <li> <b> Aidos Sabdenov </b> (March 2020 - Aug 2020): 
+                        <p style="margin:0px;"> <b><i> Intent classification for medical domain </i> </b> </p> 
+                        M2 internship, Master Sciences Cognitives <!-- , with co-supervision of Philippe Jolivet -->
+                      </li>
+                        
+                    </ul>
+              </div>
+            
+          
+        
+            
+              
+              <div class="tab-pane overflow-auto" id="education" role="tabpanel" aria-labelledby="education-tab">  
+                <h5 class="card-title text-center" style="font-family:Courgette;">Education</h5>
+                
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/loria_ul.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Lorraine University / LORIA</h5>
+                      <p style="margin:0px;"> PhD
+                      <p style="margin:0px;"> Human-Machine Dialog in the Medical Domain
+                    </div>
+                  </div>
+                  
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/mines.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Ecole Nationale Supérieure des Mines de Nancy</h5>
+                      <p style="margin:0px;"> Erasmus+ exchange
+                      <p style="margin:0px;"> Big Data and Data science
+                    </div>
+                  </div>
+                  
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/kpi_iasa.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Institute for applied system analysis of NTTU “Igor Sikorsky Kyiv Polytechnic Institute”</h5>
+                      <p style="margin:0px;"> Master
+                      <p style="margin:0px;"> Data Mining in Project Management
+                    </div>
+                  </div>
+                  
+                  <div class="media  mt-3">
+                    <img src="/assets/img/icons/kpi_iasa.png" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Institute for applied system analysis of NTTU “Igor Sikorsky Kyiv Polytechnic Institute”</h5>
+                      <p style="margin:0px;"> Bachelor
+                      <p style="margin:0px;"> System analysis
+                    </div>
+                  </div>
+                  
+            </div> 
+            
+          
+        
+      </div>
+  </div>
+</div>
+
+<!-- ANIMATE.JS ANIMATE LIBRARY
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
+
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+    $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+</script> 
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+    $(document).ready(function() {
+        $(".toast").toast("show");
+    });
+</script>
+
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
+
+
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+var myBarChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'My Skills',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+
+
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
+</script>
+
+
+    </div>
+    <div class="dumbarton-spacer"></div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
+        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
+    </p>
+    <p class="navbar-text pull-right">
+            <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/aliednik">
+            <span style="color: Black;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+    
+        <a href="https://github.com/pasana">
+            <span style="color: Black;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+        <a href="https://www.linkedin.com/in/anna-liednikova">
+            <span style="color: Black;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+ 
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
+</html>

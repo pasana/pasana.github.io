@@ -1,0 +1,32 @@
+<!-- Displays Social Media Icons based on _config.yml settings -->
+{{ if site.twitter }}
+<span style="color: White;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
+            <span style="color: White;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+    {{ elseif site.github }}
+        <a href="https://github.com/{{ site.github }}">
+            <span style="color: White;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    {{ elseif site.linkedin }}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
+            <span style="color: White;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+    {{ elseif site.researchgates }}
+        <a href="https://www.researchgate.net/profile/{{ site.researchgates }}">
+            <span style="color: White;">
+                <i class="fab fa-researchgates fa-lg"></i></a>
+            </span>
+
+    {{ elseif site.googlescholar }}
+        <a href="https://www.googlescholar.com/in/{{ site.googlescholar }}">
+            <span style="color: White;">
+                <i class="fab fa-googlescholar fa-lg"></i></a>
+            </span>
+    <i> &nbsp;&nbsp; </i>
+
+</span>

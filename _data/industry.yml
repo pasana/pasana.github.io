@@ -1,0 +1,46 @@
+- company: ALIAE
+  id: project1
+  position: Intern -> PhD Researcher
+  location: Nancy, France
+  description:
+    - semantic classification
+    - automated data expansion 
+  start_date: February 2019
+  end_date: ...
+  image: /assets/img/icons/aliae.png
+  tech: 
+    - python
+    - chatbots
+    - graphs
+
+
+- company: Jooble
+  id: project2
+  position: Data Scientist
+  location: Nancy, France
+  description: 
+    - multi language text topic classification; 
+    - pairwise and pointwise ranking; 
+    - click prediction by text and additional data  
+  start_date: April 2018
+  end_date: July 2018
+  image: /assets/img/icons/jooble.png
+  tech: 
+    - python
+    - ranking
+    - nlp
+
+- company: Dataroot
+  id: project3
+  position: Intern -> Data Scientist -> Leader Data Scientist
+  location: Nancy, France
+  description:
+    - NLP text processing & analysis / information retrieval tasks / topic modeling
+    - user behavior & path analysis using data mining techniques and graph theory
+  start_date: May 2016
+  end_date: August 2017
+  image: /assets/img/icons/dataroot.png
+  tech: 
+    - python
+    - big data
+    - data mining
