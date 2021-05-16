@@ -12,8 +12,8 @@ title: Welcome to Anna Liednikova page
 email: 
 description: PhD student developping healthcare chatbot
 baseurl:                                       # the subpath of your site, e.g. /blog
-#url: "https://pasana.github.io"
-url: "http://127.0.0.1:4000" #https://pasana.netlify.app"          # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pasana.github.io"
+#url: "http://127.0.0.1:4000" #https://pasana.netlify.app"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/dumbarton.png               # used to generate site link preview
 image_alt: A minimalistic jekyll theme for academic    # image description
 
