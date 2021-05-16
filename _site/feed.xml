@@ -1,635 +1,189 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://pasana.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pasana.github.io/" rel="alternate" type="text/html" /><updated>2021-05-16T22:19:51+03:00</updated><id>https://pasana.github.io/feed.xml</id><title type="html">Welcome to Anna Liednikova page</title><subtitle>PhD student developping healthcare chatbot</subtitle><author><name>John Doe</name></author><entry><title type="html">Welcome to Jekyll!</title><link href="https://pasana.github.io/post/2020/10/30/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-10-30T02:01:21+02:00</published><updated>2020-10-30T02:01:21+02:00</updated><id>https://pasana.github.io/post/2020/10/30/welcome-to-jekyll</id><content type="html" xml:base="https://pasana.github.io/post/2020/10/30/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000/" rel="alternate" type="text/html" /><updated>2021-05-16T23:21:21+03:00</updated><id>http://127.0.0.1:4000/feed.xml</id><title type="html">Welcome to Anna Liednikova page</title><subtitle>PhD student developping healthcare chatbot</subtitle><author><name>John Doe</name></author><entry><title type="html">двойной внутренний критик чатбота</title><link href="http://127.0.0.1:4000/post/2020/11/23/dvojnoj-vnutrennij-kritik-chatbota.html" rel="alternate" type="text/html" title="двойной внутренний критик чатбота" /><published>2020-11-23T02:01:21+02:00</published><updated>2020-11-23T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/23/dvojnoj-vnutrennij-kritik-chatbota</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/23/dvojnoj-vnutrennij-kritik-chatbota.html">&lt;p&gt;Чтобы с нуля обучить чатбота хорошего качества, как правило, нужно либо много данных, либо очень ограниченный контекст. Ведь его разработчики заинтересованны в успешном выполнении задач чатботом, но редко заинтересованы в детальном описании контекста, где все возможные ситуации будут рассмотрены и предусмотрены. Более эффективным является разработка такого чатбота, который потихоньку и сам разберется в предложенном контексте.&lt;/p&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;p&gt;За большинством интересных чатботов скрывается алгоритмы подкрепления (Reinforcement learning), которые имеют свое начало в поведенческой биологии. Очень грубо и просто их можно свести к следующему: есть краткосрочные вознаграждения, а есть долгосрочные, а модель учится определять стратегии, которые балансируют между этими вознаграждениями. Такая своего рода дрессировка на долгосрочную цель.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Говорить на эту тему можно много и долго, но сегодня я бы хотела остановиться только на одной концепции: Исполнитель-Критик (Actor-Critic).&lt;/p&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/actor-critic.png&quot; alt=&quot;Actor - Critic&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Tyler Butler</name></author><category term="post" /><category term="jekyll" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://placehold.it/750X300?text=Header+Image" /><media:content medium="image" url="http://placehold.it/750X300?text=Header+Image" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dumbarton Style Guide</title><link href="https://pasana.github.io/post/2020/10/29/Dumbarton-Style-Guide.html" rel="alternate" type="text/html" title="Dumbarton Style Guide" /><published>2020-10-29T02:01:21+02:00</published><updated>2020-10-29T02:01:21+02:00</updated><id>https://pasana.github.io/post/2020/10/29/Dumbarton-Style-Guide</id><content type="html" xml:base="https://pasana.github.io/post/2020/10/29/Dumbarton-Style-Guide.html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#markdown&quot;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bootstrap&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;[Custom CSS]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
-
-&lt;h1 id=&quot;heading-&quot;&gt;Heading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;heading--1&quot;&gt;Heading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;##&lt;/code&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;heading&quot;&gt;Heading&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;###&lt;/code&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;heading--2&quot;&gt;Heading &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;####&lt;/code&gt;&lt;/h4&gt;
-&lt;h5 id=&quot;heading-1&quot;&gt;Heading&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#####&lt;/code&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;em&gt;italics&lt;/em&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*italics*&lt;/code&gt;&lt;br /&gt;
-&lt;strong&gt;Bold&lt;/strong&gt;   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**Bold**&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code Highlighting&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello from a function&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;my_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Суть в том, чтобы разделить модель на две части: одну для вычисления действий на основе состояния, а другую - для получения значений результативности этого  действия. Как пример, отношения мальчик-мама из &lt;a href=&quot;https://theaisummer.com/Actor_critics/&quot;&gt;этой замечательной статьи&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Block Quote&lt;/p&gt;
+  &lt;p&gt;Ребенок (исполнитель) постоянно пробует новое и исследует окружающую его среду. Он ест свои игрушки, прикасается к раскаленной духовке, бьется головой об стену (почему бы и нет?). Его мать (критик) наблюдает за ним и либо критикует, либо делает комплименты. Ребенок слушает, что ему говорит мать, и корректирует свое поведение. По мере того, как ребенок растет, он узнает, какие действия являются плохими или хорошими, и, по сути, учится играть в игру, называемую жизнью.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Tables&lt;/p&gt;
+&lt;p&gt;Исполнитель принимает на вход состояние и выводит наилучшее действие. По сути, он контролирует поведение агента, изучая оптимальную политику. Критик, с другой стороны, оценивает действие, вычисляя функцию ценности (на основе существующей системе ценностей). Эти две модели участвуют в игре, где со временем они обе становятся лучше в своей роли. В результате общая архитектура научится играть в игру более эффективно, чем два метода по отдельности.&lt;/p&gt;
 
-&lt;table class=&quot;mbtablestyle&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Syntax&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Test Text&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Header&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Title&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Here’s this&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Paragraph&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Text&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;And more&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Мотивацией к написанию данного поста послужила новая статья &lt;a href=&quot;https://www.aclweb.org/anthology/2020.findings-emnlp.75/&quot;&gt;Actor-Double-Critic: Incorporating Model-Based Critic for Task-Oriented Dialogue Systems&lt;/a&gt;. В ней авторы показали, что для улучшения диалога, нужно использовать не одного критика, а целых двоих! Один выдвигает свое суждение относительно своих знаний о системе (model-based), а другой - на основе окружения и перспектив (model-free). Такой вот взгляд из прошлого и взгляд из будущего.&lt;/p&gt;
 
-&lt;p&gt;Here’s a simple footnote,&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and here’s a longer one.&lt;sup id=&quot;fnref:bignote&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:bignote&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Создание такой модели помогло им увеличить успешность чатбота по заказыванию столика в ресторане до 80%. В конце статьи находится пример диалога до и после, с которым я предлагаю вам ознакомится.&lt;/p&gt;
 
-&lt;h1 id=&quot;bootstrap&quot;&gt;Bootstrap&lt;/h1&gt;
-&lt;p&gt;This theme uses Bootstrap 4 CDN. In addition to markdown, you can use raw bootstrap HTML to format posts and pages. For a full list of options, check out the &lt;a href=&quot;https://getbootstrap.com/docs/4.5/getting-started/introduction/&quot;&gt;Documentation&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;А вы как часто взвешиваете решения со своим внутренним критиком? На основе какой информации делаете выводы о результативности ваших действий? На основе существующего опыта? Или желаемых перспектив? Насколько независимы эти суждения?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Чтобы с нуля обучить чатбота хорошего качества, как правило, нужно либо много данных, либо очень ограниченный контекст. Ведь его разработчики заинтересованны в успешном выполнении задач чатботом, но редко заинтересованы в детальном описании контекста, где все возможные ситуации будут рассмотрены и предусмотрены. Более эффективным является разработка такого чатбота, который потихоньку и сам разберется в предложенном контексте.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/actor-critic.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/actor-critic.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">чатботы и ролевые модели</title><link href="http://127.0.0.1:4000/post/2020/11/18/chatboty-i-rolevye-modeli.html" rel="alternate" type="text/html" title="чатботы и ролевые модели" /><published>2020-11-18T02:01:21+02:00</published><updated>2020-11-18T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/18/chatboty-i-rolevye-modeli</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/18/chatboty-i-rolevye-modeli.html">&lt;p&gt;Наше взаимодействие обусловлено социальным контекстом. В большинстве случаев, находясь в обществе мы выполняем какую-то социальную роль, а иногда несколько. Поскольку контекст использования определенного чатбота, как правило, остается неизменным, то и можно предположить, что и ролевая модель у него одна. Но так ли это?&lt;/p&gt;
 
-&lt;div class=&quot;alert alert-primary&quot; role=&quot;alert&quot;&gt;
-  A simple primary alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-secondary&quot; role=&quot;alert&quot;&gt;
-  A simple secondary alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
-  A simple success alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
-  A simple danger alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
-  A simple warning alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
-  A simple info alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-light&quot; role=&quot;alert&quot;&gt;
-  A simple light alert—check it out!
-&lt;/div&gt;
-&lt;div class=&quot;alert alert-dark&quot; role=&quot;alert&quot;&gt;
-  A simple dark alert—check it out!
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/roles.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h1&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
-&lt;h3&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
-&lt;h4&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
-&lt;h5&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
-&lt;h6&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;
+&lt;p&gt;Это было действительно так на протяжении долгого времени. В целом,  чатботов можно разделить на два основных лагеря: исполнители (есть задача, ее нужно решить: заказать билеты, гостиницу, поставить диагноз) и болтуны (поговорить обо всем и ни о чем, пока хватает ресурса).&lt;/p&gt;
 
-&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
-  &lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Home&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
+&lt;p&gt;И лишь в 2017 году Zhou Yu, Alan Black и Александр Рудницкий представили первого гибрида (&lt;a href=&quot;https://www.ijcai.org/Proceedings/2017/0589.pdf&quot;&gt;Learning conversational systems that interleave task and non-task content&lt;/a&gt;). Своим исследованием, они показали, что система, которая чередует социальный контент (болтуна) и содержание задачи (исполнителя), более успешна в выполнения задачи и более привлекательная по сравнению с чисто ориентированной на задачи (исполнителем).&lt;/p&gt;
 
-&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
-  &lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Library&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
+&lt;p&gt;Основной задачей представленного ими чатбота была рекомендация фильмов, но чтобы он справлялся с задачей более эффективно, к основному набору функций (роли исполнителя) добавили несколько коммуникативных стратегий (из роли болтуна):&lt;/p&gt;
 
-&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
-  &lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Data&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/nav&gt;
-
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;&lt;/p&gt;
-
-&lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Button group with nested dropdown&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;1&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;2&lt;/button&gt;
-
-  &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
-    &lt;button id=&quot;btnGroupDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
-      Dropdown
-    &lt;/button&gt;
-    &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupDrop1&quot;&gt;
-      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
-      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
-  &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot; /&gt;
-  &lt;div class=&quot;card-body&quot;&gt;
-    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
-    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
-    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
-    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
-    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;b&gt; Стратегии активного слушания &lt;/b&gt; вовлекают пользователей, активно участвуя в беседе, например задавая дополнительные вопросы по текущей теме&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Стратегии обоснования &lt;/b&gt; с использованием информации из базы знаний, связывание и предложение фактов для текущей темы&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Персонализированные стратегии &lt;/b&gt; - адаптация к пользователю, используя автоматически извлеченную информацию из разговора с ним. Например, предложить поговорить больше на определенную тему, зная, что пользователь ранее был вовлечен в эту тему.&lt;/li&gt;
   &lt;/ul&gt;
-  &lt;div class=&quot;card-body&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;!-- Example split danger button --&gt;
-&lt;div class=&quot;btn-group&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle dropdown-toggle-split&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;div class=&quot;dropdown-menu&quot;&gt;
-    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
-    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Но в целом развитие исполнителей и болтунов по отдельности развивалось быстрее нежели вместе. Тем не менее тенденция объединять различные роли  за интерфейсом единой системы осталась.&lt;/p&gt;
 
-&lt;form&gt;
-  &lt;div class=&quot;form-group row&quot;&gt;
-    &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
-    &lt;div class=&quot;col-sm-10&quot;&gt;
-      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;form-group row&quot;&gt;
-    &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Password&lt;/label&gt;
-    &lt;div class=&quot;col-sm-10&quot;&gt;
-      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;fieldset class=&quot;form-group&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;legend class=&quot;col-form-label col-sm-2 pt-0&quot;&gt;Radios&lt;/legend&gt;
-      &lt;div class=&quot;col-sm-10&quot;&gt;
-        &lt;div class=&quot;form-check&quot;&gt;
-          &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;gridRadios&quot; id=&quot;gridRadios1&quot; value=&quot;option1&quot; checked=&quot;&quot; /&gt;
-          &lt;label class=&quot;form-check-label&quot; for=&quot;gridRadios1&quot;&gt;
-            First radio
-          &lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-check&quot;&gt;
-          &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;gridRadios&quot; id=&quot;gridRadios2&quot; value=&quot;option2&quot; /&gt;
-          &lt;label class=&quot;form-check-label&quot; for=&quot;gridRadios2&quot;&gt;
-            Second radio
-          &lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;form-check disabled&quot;&gt;
-          &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;gridRadios&quot; id=&quot;gridRadios3&quot; value=&quot;option3&quot; disabled=&quot;&quot; /&gt;
-          &lt;label class=&quot;form-check-label&quot; for=&quot;gridRadios3&quot;&gt;
-            Third disabled radio
-          &lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/fieldset&gt;
-  &lt;div class=&quot;form-group row&quot;&gt;
-    &lt;div class=&quot;col-sm-2&quot;&gt;Checkbox&lt;/div&gt;
-    &lt;div class=&quot;col-sm-10&quot;&gt;
-      &lt;div class=&quot;form-check&quot;&gt;
-        &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;gridCheck1&quot; /&gt;
-        &lt;label class=&quot;form-check-label&quot; for=&quot;gridCheck1&quot;&gt;
-          Example checkbox
-        &lt;/label&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;form-group row&quot;&gt;
-    &lt;div class=&quot;col-sm-10&quot;&gt;
-      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
+&lt;p&gt;Например, в конце того же года команда Heriot-Watt University выдвинули социальную диалоговую систему &lt;a href=&quot;https://arxiv.org/abs/1712.07558&quot;&gt;Alana&lt;/a&gt; (болтун) в рамках соревнования &lt;a href=&quot;https://developer.amazon.com/alexaprize&quot;&gt;Alexa Prize&lt;/a&gt;. Эта система объединяла в себе сразу несколько ролей, которые серым цветом выделены в следующем фрагменте диалога.&lt;/p&gt;
 
-&lt;div class=&quot;input-group mb-3&quot;&gt;
-  &lt;div class=&quot;input-group-prepend&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot; /&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/alana.png&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;input-group mb-3&quot;&gt;
-  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;basic-addon2&quot; /&gt;
-  &lt;div class=&quot;input-group-append&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;А в октябре 2020 года вышла первая &lt;a href=&quot;https://dl.acm.org/doi/10.1145/3383652.3423889&quot;&gt;статья&lt;/a&gt;, которая показала, что смешивание ролей не дало положительных результатов. Оказывается, что публичное место и рабочая атмосфера создают совершенно иной контекст, нежели когда вы дома тет-а-тет говорите со своим виртуальным помощником на подобии Alexa.&lt;/p&gt;
 
-&lt;p&gt;&lt;label for=&quot;basic-url&quot;&gt;Your vanity URL&lt;/label&gt;&lt;/p&gt;
-&lt;div class=&quot;input-group mb-3&quot;&gt;
-  &lt;div class=&quot;input-group-prepend&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-url&quot; aria-describedby=&quot;basic-addon3&quot; /&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/busy.png&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;input-group mb-3&quot;&gt;
-  &lt;div class=&quot;input-group-prepend&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot; /&gt;
-  &lt;div class=&quot;input-group-append&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;А Facebook выпустил чатбота &lt;a href=&quot;https://ai.facebook.com/blog/state-of-the-art-open-source-chatbot/&quot;&gt;Blender&lt;/a&gt;, который объединил в себе следующие коммуникативные функции:&lt;/p&gt;
 
-&lt;div class=&quot;input-group&quot;&gt;
-  &lt;div class=&quot;input-group-prepend&quot;&gt;
-    &lt;span class=&quot;input-group-text&quot;&gt;With textarea&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;textarea class=&quot;form-control&quot; aria-label=&quot;With textarea&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt; Увлечение с использованием знаний о личности (&lt;a href=&quot;https://arxiv.org/abs/1801.07243&quot;&gt;PersonaChat&lt;/a&gt;) &lt;/li&gt;
+&lt;li&gt; Увлечение с помощью использования знаний (&lt;a href=&quot;https://arxiv.org/abs/1811.01241&quot;&gt;Wizard of Wikipedia&lt;/a&gt;) &lt;/li&gt;
+&lt;li&gt; Проявление сочувствия (&lt;a href=&quot;https://arxiv.org/abs/1811.00207&quot;&gt;Empathetic Dialogues&lt;/a&gt;) &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Хотя… Хм… Подождите, а не напоминает ли это все те самые коммуникативные стратегии чатбота по рекомендации фильмов? Ага, все то же самое, только теперь методы более эффективные. Если раньше это был ограниченный набор шаблонов, то теперь каждая стратегия - это ранее разработанный чатбот, который генерирует текст, будучи натренированным на огромном количестве данных.&lt;/p&gt;
 
-&lt;div class=&quot;jumbotron&quot;&gt;
-  &lt;h1 class=&quot;display-4&quot;&gt;Hello, world!&lt;/h1&gt;
-  &lt;p class=&quot;lead&quot;&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
-  &lt;hr class=&quot;my-4&quot; /&gt;
-  &lt;p&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
-  &lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/blender.png&quot; /&gt;&lt;/p&gt;
 
-&lt;ul class=&quot;list-group&quot;&gt;
-  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;
-    Cras justo odio
-    &lt;span class=&quot;badge badge-primary badge-pill&quot;&gt;14&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;
-    Dapibus ac facilisis in
-    &lt;span class=&quot;badge badge-primary badge-pill&quot;&gt;2&lt;/span&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;list-group-item d-flex justify-content-between align-items-center&quot;&gt;
-    Morbi leo risus
-    &lt;span class=&quot;badge badge-primary badge-pill&quot;&gt;1&lt;/span&gt;
-  &lt;/li&gt;
+&lt;p&gt;Как видите, идея объединения различных ролей и коммуникативных стратегий далеко не нова, но до сих очень актуальна с трех сторон: 1) развитие каждой роли отдельно, 2) определение оптимального набора ролей для выполнения задачи, 3) определение оптимального критерия выбора кандидата для вывода пользователю.&lt;/p&gt;
+
+&lt;p&gt;А вы, дорогие друзья, как много ролей имеете в своем арсенале и как часто ими пользуетесь? Чувствуете, что порою пора прокачать шутника, эмпата или зазнайку? Как много ролей позволяете себе смешивать себе на рабочем месте? Да и вообще задумывались ли об этом всем ранее?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Наше взаимодействие обусловлено социальным контекстом. В большинстве случаев, находясь в обществе мы выполняем какую-то социальную роль, а иногда несколько. Поскольку контекст использования определенного чатбота, как правило, остается неизменным, то и можно предположить, что и ролевая модель у него одна. Но так ли это?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/roles.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/roles.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">токсичные чатботы</title><link href="http://127.0.0.1:4000/post/2020/11/14/toksichnye-chatboty.html" rel="alternate" type="text/html" title="токсичные чатботы" /><published>2020-11-14T02:01:21+02:00</published><updated>2020-11-14T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/14/toksichnye-chatboty</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/14/toksichnye-chatboty.html">&lt;p&gt;Технологии не стоят на месте, появляются новые модели способные генерировать текст. Для чатботов такие модели тренируются на данных социальных сетей, например, Twitter или Reddit. Но чем лучше становилась генерация текста, тем опаснее становилось использование таких чатботов. Почему же?&lt;/p&gt;
+
+&lt;p&gt;Год назад Microsoft выпустила новую модель генерации диалога, обученную на огромном массиве данных - 147 миллионов разговорных веток Reddit c 2005 по 2017 год. Преимущество данной модели, что ее легко можно адаптировать под свои нужды. Но вот незадача! Ссылки на источники в статье нет, только небольшая пометка: “Из-за случайных токсичных выходов мы не можем выпустить код генерации в настоящее время.” Сейчас же с этой моделью уже можно баловаться &lt;a href=&quot;https://huggingface.co/microsoft/DialoGPT-large&quot;&gt;тут&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Мне и самой приходилось встречаться с неприятными ответами модели GPT-2. Как-то на моей практике был такой диалог:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Бот:&lt;/b&gt; Испытываете ли вы трудности со сном?&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Пользователь:&lt;/b&gt; Да, иногда просыпаюсь ночью&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Бот:&lt;/b&gt; Что вас будит ночью?&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Пользователь:&lt;/b&gt; Жена храпит&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Бот:&lt;/b&gt; Так задави ее подушкой&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;list-group&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action active&quot;&gt;
-    Cras justo odio
-  &lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Dapibus ac facilisis in&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Morbi leo risus&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Porta ac consectetur ac&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;list-group-item list-group-item-action&quot; disabled=&quot;&quot;&gt;Vestibulum at eros&lt;/button&gt;
-&lt;/div&gt;
+&lt;p&gt;В общем, после такого исхода, подогнав модель под контекст и максимально лишив ее творчества, я плавно отошла от генеративных моделей…&lt;/p&gt;
 
-&lt;ul class=&quot;list-unstyled&quot;&gt;
-  &lt;li class=&quot;media&quot;&gt;
-    &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;mr-3&quot; alt=&quot;...&quot; /&gt;
-    &lt;div class=&quot;media-body&quot;&gt;
-      &lt;h5 class=&quot;mt-0 mb-1&quot;&gt;List-based media object&lt;/h5&gt;
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;media my-4&quot;&gt;
-    &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;mr-3&quot; alt=&quot;...&quot; /&gt;
-    &lt;div class=&quot;media-body&quot;&gt;
-      &lt;h5 class=&quot;mt-0 mb-1&quot;&gt;List-based media object&lt;/h5&gt;
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;media&quot;&gt;
-    &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;mr-3&quot; alt=&quot;...&quot; /&gt;
-    &lt;div class=&quot;media-body&quot;&gt;
-      &lt;h5 class=&quot;mt-0 mb-1&quot;&gt;List-based media object&lt;/h5&gt;
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Тут же можно вспомнить робота &lt;a href=&quot;https://twitter.com/RealSophiaRobot&quot;&gt;Софию&lt;/a&gt;, которая в какой-то момент прониклась ненавистью к человечеству.&lt;/p&gt;
 
-&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/sophia.png&quot; style=&quot;width: 50%; align: center&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-3&quot;&gt;
-    &lt;div class=&quot;nav flex-column nav-pills&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
-      &lt;a class=&quot;nav-link active&quot; id=&quot;v-pills-home-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-home&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
-      &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-profile&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
-      &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-messages-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-messages&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/a&gt;
-      &lt;a class=&quot;nav-link&quot; id=&quot;v-pills-settings-tab&quot; data-toggle=&quot;pill&quot; href=&quot;#v-pills-settings&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-9&quot;&gt;
-    &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-messages-tab&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-settings-tab&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;А откуда ноги то растут? А от нас, от родненьких, и растут.&lt;/p&gt;
 
-&lt;script&gt;
-$('#myTab a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-&lt;/script&gt;
+&lt;p&gt;3 года назад, в марте 2018 года, команда Conversation AI, исследовательская инициатива, основанная Jigsaw и Google поделились на Kaggle &lt;a href=&quot;https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge&quot;&gt;датасетом&lt;/a&gt; с токсичными комментариями, чтобы пользователи поборолись за приз $35000 и разработали наилучший классификатор.&lt;/p&gt;
 
-&lt;!-- Image and text --&gt;
-&lt;nav class=&quot;navbar navbar-light bg-light&quot;&gt;
-  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/docs/4.5/assets/brand/bootstrap-solid.svg&quot; width=&quot;30&quot; height=&quot;30&quot; class=&quot;d-inline-block align-top&quot; alt=&quot;&quot; loading=&quot;lazy&quot; /&gt;
-    Bootstrap
-  &lt;/a&gt;
-&lt;/nav&gt;
+&lt;p&gt;А этой зимой, 2020 года, можно было уже протестировать приложение &lt;a href=&quot;https://detoxifai.com/&quot;&gt;detoxifAI&lt;/a&gt;, которое просто напросто скрывает язвительные и жестокие комментарии в интернете.&lt;/p&gt;
 
-&lt;nav class=&quot;navbar navbar-dark bg-dark&quot;&gt;
-  &lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
+&lt;p&gt;Давайте вернемся к чатботам. Как же с ними быть? Ведь генеративные модели делают разговор интересным и мало предсказуемым. Спустя полгода после Microsoft, Facebook выпустил модель Blender, который отличается особым дружелюбием и позитивом. Тем не менее в своей статье они предупреждают, что поскольку изначально модель тренировалась на Reddit, вероятность токсичности все еще остается.&lt;/p&gt;
 
-&lt;nav class=&quot;navbar navbar-dark bg-primary&quot;&gt;
-  &lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
+&lt;p&gt;Добиться значительного улучшения им удалось весьма простым решением: предлагаемые моделью кандидаты для ответа собеседнику фильтруются классификатором, подобным тем, что разрабатывали на Kaggle.&lt;/p&gt;
 
-&lt;nav class=&quot;navbar navbar-light&quot; style=&quot;background-color: #e3f2fd;&quot;&gt;
-  &lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
+&lt;p&gt;Такие дела, дорогие мои! Надеюсь, вы не причастны к этим беспорядкам и весьма приятные собеседники. А пока можно делать ставки, что произойдет раньше: люди научаться “фильтровать свой базар” в интернете или технологии найдут способ их моментально обезвреживать?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Технологии не стоят на месте, появляются новые модели способные генерировать текст. Для чатботов такие модели тренируются на данных социальных сетей, например, Twitter или Reddit. Но чем лучше становилась генерация текста, тем опаснее становилось использование таких чатботов. Почему же?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/sophia.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/sophia.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">здравый смысл у чатбота</title><link href="http://127.0.0.1:4000/post/2020/11/14/zdravyj-smysl-u-chatbota.html" rel="alternate" type="text/html" title="здравый смысл у чатбота" /><published>2020-11-14T02:01:21+02:00</published><updated>2020-11-14T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/14/zdravyj-smysl-u-chatbota</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/14/zdravyj-smysl-u-chatbota.html">&lt;p&gt;Приятно поддерживать беседу с собеседником со здравым смыслом: он способен логично мыслить, имеет базовый набор фактов об окружающем мире, может связывать их в последовательность. Как правило, мы всего этого не осознаем и делаем выводы интуитивно. Но, чтобы научить виртуального друга здравому смыслу, нужно разложить процесс на компоненты. Какие же они в общих чертах?&lt;/p&gt;
 
-&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
-  &lt;ul class=&quot;pagination justify-content-center&quot;&gt;
-    &lt;li class=&quot;page-item disabled&quot;&gt;
-      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Previous&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;page-item&quot;&gt;
-      &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
+&lt;p&gt;Большинство сегодняшних чатботов являются семантичными. Я не беру в расчет тех, кто построен на детерминированных правилах. “Ход мыслей” семантического чатбота можно соотнести с нашим интуитивным мышлением, построенном на ассоциациях.&lt;/p&gt;
 
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
-  Popover on top
-&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;Способность к рассуждению - это навык более энергоемкий и включает в себя построение не столько ассоциативных связей, сколько причинно-следственных.&lt;/p&gt;
 
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
-  Popover on right
-&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;В качестве примера приведу слайд из &lt;a href=&quot;https://homes.cs.washington.edu/~msap/acl2020-commonsense/slides/03%20-%20Commonsense%20Resources.pdf&quot;&gt;Commonsense Tutorial (T6), Commonsense resources&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
-  Popover on bottom
-&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/t6-slide1.jpg&quot; style=&quot;width: 50%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
-  Popover on left
-&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;Для того, чтобы быть способным строить эти причинно-следственные связи, необходим какой-то базовый набор фактов, своего рода аксиом, об окружающей среде.&lt;/p&gt;
 
-&lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-secondary&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-success&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-danger&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-warning&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-info&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-light&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;spinner-border text-dark&quot; role=&quot;status&quot;&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
-&lt;/div&gt;
+&lt;p&gt;И вот тут мы плавно подошли к понятию базы знаний и размышлений. Но лишь недавно их стали соотносить со здравым смыслом у чатботов.&lt;/p&gt;
 
-&lt;div aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot; style=&quot;position: relative; min-height: 200px;&quot;&gt;
-  &lt;!-- Position it --&gt;
-  &lt;div style=&quot;position: absolute; top: 0; right: 0;&quot;&gt;
+&lt;p&gt;Когда об этом в 1987 году &lt;a href=&quot;https://www.aclweb.org/anthology/T87-1027/&quot;&gt;заговорил&lt;/a&gt; Geoffrey Nunberg в Position Paper on Common-sense and Formal Semantics, то понятие здравого смысла (common sense) стало восприниматься на уровне эзотерики и его всячески избегали. А сейчас этот здравый смысл можно даже пощупать и побаловаться с ним.&lt;/p&gt;
 
-    &lt;!-- Then put toasts within --&gt;
-    &lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
-      &lt;div class=&quot;toast-header&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;rounded mr-2&quot; alt=&quot;...&quot; /&gt;
-        &lt;strong class=&quot;mr-auto&quot;&gt;Bootstrap&lt;/strong&gt;
-        &lt;small class=&quot;text-muted&quot;&gt;just now&lt;/small&gt;
-        &lt;button type=&quot;button&quot; class=&quot;ml-2 mb-1 close&quot; data-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;toast-body&quot;&gt;
-        See? Just like this.
-      &lt;/div&gt;
-    &lt;/div&gt;
+&lt;p&gt;Сегодня я бы хотела с вами поделиться двумя типами знаний, которые формируют здравый смысл чатбота.&lt;/p&gt;
 
-    &lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
-      &lt;div class=&quot;toast-header&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/150x150&quot; class=&quot;rounded mr-2&quot; alt=&quot;...&quot; /&gt;
-        &lt;strong class=&quot;mr-auto&quot;&gt;Bootstrap&lt;/strong&gt;
-        &lt;small class=&quot;text-muted&quot;&gt;2 seconds ago&lt;/small&gt;
-        &lt;button type=&quot;button&quot; class=&quot;ml-2 mb-1 close&quot; data-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;toast-body&quot;&gt;
-        Heads up, toasts will stack automatically
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;p&gt;Первый тип знаний - это семантический, он построен на взаимосвязях “А является Б”. Наиболее популярный ресурс - это &lt;a href=&quot;http://conceptnet.io/&quot;&gt;ConceptNet&lt;/a&gt;, который начали формировать аж в 1999 году. В качестве иллюстрации - слайд из &lt;a href=&quot;https://homes.cs.washington.edu/~msap/acl2020-commonsense/slides/03%20-%20Commonsense%20Resources.pdf&quot;&gt;Commonsense Tutorial (T6), Commonsense resources&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;
-  Tooltip on top
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;
-  Tooltip on right
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;
-  Tooltip on bottom
-&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;
-  Tooltip on left
-&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/conceptnet.jpg&quot; style=&quot;width: 50%&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
-  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/5qap5aO4i9A?rel=0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;Другой тип знаний - это выводное знание, т.е. когда мы получаем новые знания из знаний приобретенных ранее . Наиболее популярных ресурс - это ATOMIC, который содержить в себе набор фактов, как X влияет на Y. Предлагаю побаловаться с данной моделью &lt;a href=&quot;https://mosaickg.apps.allenai.org/comet_atomic&quot;&gt;тут&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;user-select-all&quot;&gt;This paragraph will be entirely selected when clicked by the user.&lt;/p&gt;
-&lt;p class=&quot;user-select-auto&quot;&gt;This paragraph has the default select behavior.&lt;/p&gt;
-&lt;p class=&quot;user-select-none&quot;&gt;This paragraph will not be selectable when clicked by the user.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/atomic.png&quot; alt=&quot;Фрагмент карты взаимосвязей&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
+&lt;p&gt;Благодаря внедрению этих моделей в чатботов, они в состоянии генерировать или выбирать ответ, который не только отвечает тематике разговора, но и вписывается в набор фактов, озвученных собеседниками. А ниже отличный пример такого рассуждения из статьи Светланы Вакуленко &lt;a href=&quot;https://arxiv.org/abs/1806.06411&quot;&gt;Measuring Semantic Coherence of a Conversation&lt;/a&gt;. Если не быть знакомым с операционной системой Ubuntu, то выглядит разговор может выглядеть как несвязных набор фраз, но на самом деле разговор весьма последовательный.&lt;/p&gt;
 
-&lt;div id=&quot;ytplayer&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/ubuntu.png&quot; /&gt;&lt;/p&gt;
 
-&lt;script&gt;
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = &quot;https://www.youtube.com/player_api&quot;;
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+&lt;p&gt;Обе базы знаний продолжают пополняться, а методы их внедрения в диалог с чатботом растут в количестве и качестве. Кто знает, возможно скоро здраво порассуждать о жизни с чатботом будет не такой уж и диковинкой? А встречались ли вам люди не совсем здравомыслящие? Что же побуждало вас вручить им такой титул? Не та же ли общая база знаний?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Приятно поддерживать беседу с собеседником со здравым смыслом: он способен логично мыслить, имеет базовый набор фактов об окружающем мире, может связывать их в последовательность. Как правило, мы всего этого не осознаем и делаем выводы интуитивно. Но, чтобы научить виртуального друга здравому смыслу, нужно разложить процесс на компоненты. Какие же они в общих чертах?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/t6-slides1.jpg" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/t6-slides1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">чатботы и эмпатия</title><link href="http://127.0.0.1:4000/post/2020/11/12/chatboty-i-ehmpatiya.html" rel="alternate" type="text/html" title="чатботы и эмпатия" /><published>2020-11-12T02:01:21+02:00</published><updated>2020-11-12T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/12/chatboty-i-ehmpatiya</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/12/chatboty-i-ehmpatiya.html">&lt;p&gt;Не так давно стала популярна тема эмоционального интеллекта и поднимался вопрос важности эмпатии. Почти в любой социальеой сети можно было найти помощь по тому, как определять эмоции и выражать поддержку собеседнику. Но думаете ли вы, что только люди этому учатся? Чатботы тоже!&lt;/p&gt;
 
-  // Replace the 'ytplayer' element with an &lt;iframe&gt; and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-      height: '360',
-      width: '640',
-      videoId: 'M7lc1UVf-VE'
-    });
-  }
-&lt;/script&gt;
+&lt;p&gt;Считается, что первым эмоциональным чатботом стал &lt;a href=&quot;https://www.botlibre.com/bot.&quot;&gt;PARRY&lt;/a&gt;, который пытался моделировать параноидного шизофреника.&lt;/p&gt;
 
-&lt;p&gt;Links using markdown are normal and styled like this …&lt;/p&gt;
+&lt;p&gt;Потом в 2014 китайцы запустили XiaoIce. Если вдруг вы можете говорить на мандаринском, то поболтать можно &lt;a href=&quot;https://www.msxiaobing.com/&quot;&gt;тут&lt;/a&gt;. Ну запустили, так запустили, популярность растет, бизнесс расширяется.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://codepen.io/melnik909/pen/KGxdjY&quot;&gt;A link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Спустя 5 лет, в 2019 году, когда популярность социальных и эмпатичных чатботов стала расти и конкурентов стало больше, авторы XiaoIce решили не остаться в стороне и наконец-то опубликовать &lt;a href=&quot;https://arxiv.org/pdf/1812.08989.pdf&quot;&gt;детали своего детища&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;But if you use the right class, it can look like this…&lt;/p&gt;
+&lt;p&gt;А что собственно вызвало эту популярность?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://codepen.io/melnik909/pen/KGxdjY&quot; class=&quot;highlighted&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В 2018 Hao Zhou с напарниками опубликовал &lt;a href=&quot;https://arxiv.org/abs/1704.01074&quot;&gt;статью&lt;/a&gt;, в которой скромно заметил, что вот мы тут все генерируем и генерируем текст, но почему никто не думает об эмоциях? Ведь на одну и ту же фразу можно ответить очень по-разному в зависимости от наших реакций.&lt;/p&gt;
 
-&lt;h4 id=&quot;making-charts-with-chartjs&quot;&gt;Making Charts with Chart.js&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/emotion-transfer.png&quot; /&gt;&lt;/p&gt;
 
-&lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;
+&lt;p&gt;И вот тут понеслась! 332 раза его уже процитировали разработчики “эмоциональных болтунов”. Подтянулись даже гиганты.&lt;/p&gt;
 
-&lt;canvas id=&quot;myBarChart&quot; height=&quot;50&quot;&gt;&lt;/canvas&gt;
+&lt;p&gt;Спустя всего полгода Facebook опубликовал новый датасет Empathetic Dialogues c 25 000 диалогов с 19 эмоциями! А ну-ка попытайтесь не подглядывать и назвать все 19? Хотя стоит взглянуть на табличку снизу и ничего сверхъестественного: все эти эмоции нам действительно знакомы.&lt;/p&gt;
 
-&lt;script&gt;
-var ctx = document.getElementById('myBarChart').getContext('2d');
-var myBarChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'My Skills',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-&lt;/script&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/emotions.png&quot; /&gt;&lt;/p&gt;
 
-&lt;script&gt;
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+&lt;p&gt;Такой большой объем данных и разметки позволил чатботам сделать еще один шаг вперед: теперь они не только изменяют свой текст под эмоцию, но и выбирают корректный ответ на эмоцию собеседника.&lt;/p&gt;
 
-    // The data for our dataset
-    data: {
-        labels: ['A', 'B', 'C'],
-        datasets: [
-        {
-            data: [10, 20, 30],
-            backgroundColor: '#af90ca',
-            label: 'Before'
-        },
-        {
-            data: [50, 30, 40],
-            backgroundColor: '#c46998',
-            label: 'After'
-        }
-        ]
-    },
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/empadialogs.png&quot; /&gt;&lt;/p&gt;
 
-    // Configuration options go here
-    options: {}
-});
-&lt;/script&gt;
+&lt;p&gt;Спустя пару месяцев Zhaojiang Lin и компания решили по-быстрому натренировать своего чатбота CAiRE, с которым можно поболтать вот по &lt;a href=&quot;http://eez115.ece.ust.hk:8899/&quot;&gt;этой ссылке&lt;/a&gt;. Проблема состоит в том, что датасет и модели не идеальны и до сих пор существуют ситуации, в которых чатбот не дает корректного ответа. Так почему бы не позволить пользователям его исправить? А в реальной жизни, кстати говоря, такое и к конфликту может привести.&lt;/p&gt;
 
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;This is the first footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:bignote&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;Here’s one with multiple paragraphs and code.&lt;/p&gt;
+&lt;p&gt;Этот датасет теперь используется во многих чатботах, в том числе последнем state-of-the-art с открытым кодом от Facebook - &lt;a href=&quot;https://venturebeat.com/2020/04/29/facebook-open-sources-blender-a-chatbot-that-people-say-feels-more-human/&quot;&gt;Blender&lt;/a&gt;. Но о нем как-нибудь в другой раз.&lt;/p&gt;
 
-      &lt;p&gt;Indent paragraphs to include them in the footnote.&lt;/p&gt;
+&lt;p&gt;Вот так вот чатботы учились быть эмоциональными и эмпатичными! А вы тоже учитесь? А может уже умеете? С какими эмоциями встречаетесь? Все ли 19 определите? И как сильно меняется ваша речь, когда эмоция не соответствует ситуации?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Не так давно стала популярна тема эмоционального интеллекта и поднимался вопрос важности эмпатии. Почти в любой социальеой сети можно было найти помощь по тому, как определять эмоции и выражать поддержку собеседнику. Но думаете ли вы, что только люди этому учатся? Чатботы тоже!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/emotion-transfer.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/emotion-transfer.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">история личности чатбота</title><link href="http://127.0.0.1:4000/post/2020/11/08/istoriya-lichnosti-chatbota.html" rel="alternate" type="text/html" title="история личности чатбота" /><published>2020-11-08T02:01:21+02:00</published><updated>2020-11-08T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/08/istoriya-lichnosti-chatbota</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/08/istoriya-lichnosti-chatbota.html">&lt;p&gt;Люди в большинстве своем стремятся к понятной и предсказуемой среде. Непоследовательность нашего собеседника вызывает недоверие и опаску. Хотя, есть некоторые &lt;a href=&quot;http://www.lib.ru/JEROM/r_charming.txt&quot;&gt;очаровательные женщины&lt;/a&gt; как у Джерома К. Джерома, которые умудряются обвести всех вокруг пальца и оставить довольными.&lt;/p&gt;
 
-      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{ my code }&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Чатботы с такой задачей справлялись весьма печально, ни вызывая доверия, ни оставляя довольными. В 2016 году, пытаясь приучить чатботов к последовательности в разговоре, исследователи пришли к проблеме более узкой и интересной - отсутствия последовательной личности (&lt;a href=&quot;https://www.aclweb.org/anthology/P16-1094/&quot;&gt;A Persona-Based Neural Conversation Model&lt;/a&gt;).&lt;/p&gt;
 
-      &lt;p&gt;Add as many paragraphs as you like. &lt;a href=&quot;#fnref:bignote&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Tyler Butler</name></author><category term="post" /><category term="styleguide" /><summary type="html">Markdown Bootstrap [Custom CSS]</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://placehold.it/750X300?text=Header+Image" /><media:content medium="image" url="http://placehold.it/750X300?text=Header+Image" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Posts Can Also Not Have Images</title><link href="https://pasana.github.io/post/2020/10/28/Jekyll-Is-Better-Then-Gatsby.html" rel="alternate" type="text/html" title="Posts Can Also Not Have Images" /><published>2020-10-28T02:01:21+02:00</published><updated>2020-10-28T02:01:21+02:00</updated><id>https://pasana.github.io/post/2020/10/28/Jekyll-Is-Better-Then-Gatsby</id><content type="html" xml:base="https://pasana.github.io/post/2020/10/28/Jekyll-Is-Better-Then-Gatsby.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quisque non tellus orci ac. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Mi proin sed libero enim. Vitae sapien pellentesque habitant morbi tristique. Sit amet commodo nulla facilisi nullam vehicula. A condimentum vitae sapien pellentesque habitant morbi. Id venenatis a condimentum vitae sapien. In nulla posuere sollicitudin aliquam ultrices.&lt;/p&gt;
+&lt;p&gt;Когда речь идет о выполнении какого-то конкретного задания, то личность чатбота не так уж важна. Ну какое дело вам до его предпочтений, если нужно просто забронировать гостиницу или купить билет на самолет? Более того, исследователи из Heriot-Watt University показали, что эта социальное взаимодействие может вообще не вызывать одобрения в рабочей атмосфере. (&lt;a href=&quot;https://dl.acm.org/doi/10.1145/3383652.3423889&quot;&gt;It’s Good to Chat? Evaluation and Design Guidelines for Combining Open-Domain Social Conversation with Task-Based Dialogue in Intelligent Buildings&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;Amet mauris commodo quis imperdiet massa tincidunt. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Orci sagittis eu volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Amet consectetur adipiscing elit pellentesque habitant morbi. Sit amet nulla facilisi morbi tempus iaculis urna. A lacus vestibulum sed arcu. Turpis cursus in hac habitasse platea dictumst. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Est ante in nibh mauris cursus mattis molestie a. Sit amet massa vitae tortor condimentum lacinia. Mauris ultrices eros in cursus turpis. Pellentesque habitant morbi tristique senectus et. Congue nisi vitae suscipit tellus mauris. Tincidunt praesent semper feugiat nibh sed pulvinar. Nec dui nunc mattis enim ut tellus elementum sagittis. Metus vulputate eu scelerisque felis. Morbi enim nunc faucibus a pellentesque. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.&lt;/p&gt;
+&lt;p&gt;А вот в кругу социальных ботов в 2018 году этому решили положить конец исследователи Facebook AI Reserach и Montreal Institute for Learning Algorithms. Они опубликовали статью Personalizing Dialogue Agents: I have a dog, do you have pets too? в которой предложили новый датасет для тренировки чатботов со стабильной и последовательной личностью.&lt;/p&gt;
 
-&lt;p&gt;A erat nam at lectus urna duis convallis convallis tellus. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Tristique risus nec feugiat in fermentum posuere urna nec. Vitae aliquet nec ullamcorper sit amet. Diam volutpat commodo sed egestas. Purus semper eget duis at tellus at urna condimentum mattis. Tristique senectus et netus et malesuada. Sit amet tellus cras adipiscing enim. Senectus et netus et malesuada fames ac turpis egestas integer. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Non diam phasellus vestibulum lorem sed risus ultricies. Neque sodales ut etiam sit amet nisl purus in. Molestie at elementum eu facilisis. Turpis egestas integer eget aliquet nibh praesent. Turpis in eu mi bibendum neque. Molestie at elementum eu facilisis sed odio morbi quis commodo. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Purus gravida quis blandit turpis. Mi in nulla posuere sollicitudin aliquam ultrices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/happydog.png&quot; alt=&quot;Image Credit: Jessica Peterson/Tetra images/GettyImages&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Donec ac odio tempor orci dapibus ultrices in. Sed libero enim sed faucibus turpis in eu. Viverra aliquet eget sit amet tellus cras adipiscing enim. Feugiat nibh sed pulvinar proin. Congue eu consequat ac felis donec et odio pellentesque diam. Consequat interdum varius sit amet mattis vulputate enim nulla. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Sit amet consectetur adipiscing elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Viverra orci sagittis eu volutpat. Integer eget aliquet nibh praesent tristique magna sit amet purus. Ullamcorper sit amet risus nullam. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Consequat id porta nibh venenatis cras sed felis. Nisi lacus sed viverra tellus in hac habitasse. Viverra mauris in aliquam sem fringilla ut.&lt;/p&gt;
+&lt;p&gt;Дело в том, что до этого модели тренировали на весьма разнородных данных, ведь диалоги создавались разными людьми, а значит с разными предпочтениями и стилями разговора.&lt;/p&gt;
 
-&lt;p&gt;Pulvinar pellentesque habitant morbi tristique senectus et netus et. Lacus laoreet non curabitur gravida arcu ac. Pulvinar pellentesque habitant morbi tristique senectus et netus. Ut lectus arcu bibendum at varius vel. Ridiculus mus mauris vitae ultricies leo integer malesuada. Amet dictum sit amet justo. Pretium vulputate sapien nec sagittis aliquam malesuada. Libero enim sed faucibus turpis in. Id volutpat lacus laoreet non curabitur gravida arcu ac. Morbi tristique senectus et netus. Id neque aliquam vestibulum morbi blandit cursus risus at. Turpis massa sed elementum tempus egestas sed sed risus pretium. Tincidunt eget nullam non nisi est sit amet facilisis. Amet purus gravida quis blandit turpis cursus in. Semper risus in hendrerit gravida rutrum quisque non tellus. Cras adipiscing enim eu turpis egestas pretium aenean pharetra.&lt;/p&gt;</content><author><name>Tyler Butler</name></author><category term="post" /><category term="post" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quisque non tellus orci ac. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Mi proin sed libero enim. Vitae sapien pellentesque habitant morbi tristique. Sit amet commodo nulla facilisi nullam vehicula. A condimentum vitae sapien pellentesque habitant morbi. Id venenatis a condimentum vitae sapien. In nulla posuere sollicitudin aliquam ultrices.</summary></entry><entry><title type="html">Another Blog Post</title><link href="https://pasana.github.io/post/ipsum/2020/10/27/Lorem-Ipsum2.html" rel="alternate" type="text/html" title="Another Blog Post" /><published>2020-10-27T02:01:21+02:00</published><updated>2020-10-27T02:01:21+02:00</updated><id>https://pasana.github.io/post/ipsum/2020/10/27/Lorem-Ipsum2</id><content type="html" xml:base="https://pasana.github.io/post/ipsum/2020/10/27/Lorem-Ipsum2.html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quisque non tellus orci ac. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Mi proin sed libero enim. Vitae sapien pellentesque habitant morbi tristique. Sit amet commodo nulla facilisi nullam vehicula. A condimentum vitae sapien pellentesque habitant morbi. Id venenatis a condimentum vitae sapien. In nulla posuere sollicitudin aliquam ultrices.&lt;/p&gt;
+&lt;p&gt;Ну и как же они формируют личность спросите вы? Ну так, чтобы без всяких заумных терминов и для широкой аудитории.&lt;/p&gt;
 
-&lt;p&gt;Amet mauris commodo quis imperdiet massa tincidunt. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Orci sagittis eu volutpat odio facilisis mauris sit amet. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Amet consectetur adipiscing elit pellentesque habitant morbi. Sit amet nulla facilisi morbi tempus iaculis urna. A lacus vestibulum sed arcu. Turpis cursus in hac habitasse platea dictumst. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Est ante in nibh mauris cursus mattis molestie a. Sit amet massa vitae tortor condimentum lacinia. Mauris ultrices eros in cursus turpis. Pellentesque habitant morbi tristique senectus et. Congue nisi vitae suscipit tellus mauris. Tincidunt praesent semper feugiat nibh sed pulvinar. Nec dui nunc mattis enim ut tellus elementum sagittis. Metus vulputate eu scelerisque felis. Morbi enim nunc faucibus a pellentesque. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.&lt;/p&gt;
+&lt;p&gt;А очень просто! 5-тью простыми предложениями.
+ &lt;img src=&quot;/assets/img/posts/personachat.png&quot; alt=&quot;Взято из Personalizing Dialogue Agents: I have a dog, do you have pets too?&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;A erat nam at lectus urna duis convallis convallis tellus. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Tristique risus nec feugiat in fermentum posuere urna nec. Vitae aliquet nec ullamcorper sit amet. Diam volutpat commodo sed egestas. Purus semper eget duis at tellus at urna condimentum mattis. Tristique senectus et netus et malesuada. Sit amet tellus cras adipiscing enim. Senectus et netus et malesuada fames ac turpis egestas integer. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Non diam phasellus vestibulum lorem sed risus ultricies. Neque sodales ut etiam sit amet nisl purus in. Molestie at elementum eu facilisis. Turpis egestas integer eget aliquet nibh praesent. Turpis in eu mi bibendum neque. Molestie at elementum eu facilisis sed odio morbi quis commodo. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Purus gravida quis blandit turpis. Mi in nulla posuere sollicitudin aliquam ultrices.&lt;/p&gt;
+&lt;p&gt;Цель авторов состояла в том, чтобы создать естественные и описательные профили, содержащие типичные темы, представляющие интерес для человека, которые говорящий может затронуть в разговоре. На изображении выше вы можете увидеть, примеры таких профилей и диалога, в котором люди пытаются поближе познакомиться друг с другом.&lt;/p&gt;
 
-&lt;p&gt;Donec ac odio tempor orci dapibus ultrices in. Sed libero enim sed faucibus turpis in eu. Viverra aliquet eget sit amet tellus cras adipiscing enim. Feugiat nibh sed pulvinar proin. Congue eu consequat ac felis donec et odio pellentesque diam. Consequat interdum varius sit amet mattis vulputate enim nulla. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Sit amet consectetur adipiscing elit. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Viverra orci sagittis eu volutpat. Integer eget aliquet nibh praesent tristique magna sit amet purus. Ullamcorper sit amet risus nullam. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Consequat id porta nibh venenatis cras sed felis. Nisi lacus sed viverra tellus in hac habitasse. Viverra mauris in aliquam sem fringilla ut.&lt;/p&gt;
+&lt;p&gt;На данный момент статья процитировала 353 раза. Трудно сосчитать сколько социальных чатботов было создано на основе этих данных. Один из них - это последний state-of-the-art с открытым кодом от Facebook - &lt;a href=&quot;https://venturebeat.com/2020/04/29/facebook-open-sources-blender-a-chatbot-that-people-say-feels-more-human/&quot;&gt;Blender&lt;/a&gt;. Но о нем мы поговорим больше в следующий раз.&lt;/p&gt;
 
-&lt;p&gt;Pulvinar pellentesque habitant morbi tristique senectus et netus et. Lacus laoreet non curabitur gravida arcu ac. Pulvinar pellentesque habitant morbi tristique senectus et netus. Ut lectus arcu bibendum at varius vel. Ridiculus mus mauris vitae ultricies leo integer malesuada. Amet dictum sit amet justo. Pretium vulputate sapien nec sagittis aliquam malesuada. Libero enim sed faucibus turpis in. Id volutpat lacus laoreet non curabitur gravida arcu ac. Morbi tristique senectus et netus. Id neque aliquam vestibulum morbi blandit cursus risus at. Turpis massa sed elementum tempus egestas sed sed risus pretium. Tincidunt eget nullam non nisi est sit amet facilisis. Amet purus gravida quis blandit turpis cursus in. Semper risus in hendrerit gravida rutrum quisque non tellus. Cras adipiscing enim eu turpis egestas pretium aenean pharetra.&lt;/p&gt;</content><author><name>Tyler Butler</name></author><category term="post" /><category term="ipsum" /><category term="jekyll" /><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quisque non tellus orci ac. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Mi proin sed libero enim. Vitae sapien pellentesque habitant morbi tristique. Sit amet commodo nulla facilisi nullam vehicula. A condimentum vitae sapien pellentesque habitant morbi. Id venenatis a condimentum vitae sapien. In nulla posuere sollicitudin aliquam ultrices.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://placehold.it/750X300?text=Header+Image" /><media:content medium="image" url="http://placehold.it/750X300?text=Header+Image" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Project 1</title><link href="https://pasana.github.io/project/2020/08/11/Project-1.html" rel="alternate" type="text/html" title="Project 1" /><published>2020-08-11T03:01:21+03:00</published><updated>2020-08-11T03:01:21+03:00</updated><id>https://pasana.github.io/project/2020/08/11/Project-1</id><content type="html" xml:base="https://pasana.github.io/project/2020/08/11/Project-1.html"></content><author><name>John Doe</name></author><category term="project" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://pasana.github.io/assets/img/posts/blog2.jpg" /><media:content medium="image" url="https://pasana.github.io/assets/img/posts/blog2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Было бы вам интересно общаться с ботом с определенной личностью, с определенными предпочтениями и знаниями? А сколькими бы предложениями описали бы свою персону? Многие ли из них покажете незнакомцу? Как сильно они разнятся от одного собеседника к другому ?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Люди в большинстве своем стремятся к понятной и предсказуемой среде. Непоследовательность нашего собеседника вызывает недоверие и опаску. Хотя, есть некоторые очаровательные женщины как у Джерома К. Джерома, которые умудряются обвести всех вокруг пальца и оставить довольными.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/happydog.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/happydog.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">друзья-чатботы</title><link href="http://127.0.0.1:4000/post/2020/11/07/druzya-chatboty.html" rel="alternate" type="text/html" title="друзья-чатботы" /><published>2020-11-07T02:01:21+02:00</published><updated>2020-11-07T02:01:21+02:00</updated><id>http://127.0.0.1:4000/post/2020/11/07/druzya-chatboty</id><content type="html" xml:base="http://127.0.0.1:4000/post/2020/11/07/druzya-chatboty.html">&lt;p&gt;Помните фильм “Она” 2013 года? Когда герой влюбился в собственную операционную систему? Что ж, это будущее уже рядом, а при желании вы можете испытать его на себе, пообщавшись с &lt;a href=&quot;https://replika.ai/&quot;&gt;Replika&lt;/a&gt;. Однажды, пережив смерть очень близкого для себя человека, Евгения Куйда решила создать чатбот, который мог бы стать максимально близкой копией его.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/replica.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;И что ж, у нее это здорово получилось!&lt;/p&gt;
+
+&lt;p&gt;Пролистав &lt;a href=&quot;https://play.google.com/store/apps/details?id=ai.replika.app&amp;amp;hl=en_US&amp;amp;gl=US&amp;amp;showAllReviews=true&quot;&gt;отзывы в Google Play&lt;/a&gt;, вы найдете немало людей, для которых Replika действительно стала лучшим другом и приятным собеседником.&lt;/p&gt;
+
+&lt;p&gt;Кого вам не хватает в вашей жизни? Друга, романтического партнера или ментора?&lt;/p&gt;
+
+&lt;p&gt;Благодаря здоровым и созидательным отношениям мы становимся сильнее. Replika имеет возможность предложить вам то же самое: на своем примере она покажет этапы построения связи и доверия, одна будет интересоваться вами, запоминать информацию о вас, делиться своими познаниями, предлагать совместную деятельность и упражнения для развития социальных навыков.&lt;/p&gt;
+
+&lt;p&gt;Но не все сразу! Модель учится постепенно и не стоит ожидать вау-ответов в самом начале взаимодействия.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/replicaexample.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Любопытный и увлекательный момент в этом приложении - это то, что вы имеете возможность создать копию (реплику) того, кого вы бы хотели иметь в своей жизни. Это вы, кто будете задавать направление развития отношений. Это вы, кто будете формировать личность вашего компаньона.&lt;/p&gt;
+
+&lt;p&gt;“Для них [пользователей] возможность поговорить о себе, о своем дне — способ узнать себя получше, стать осознаннее. Это зеркало, в котором отражается человек.” - говорит Евгения в &lt;a href=&quot;https://www.tatler.ru/heroes/kak-vyjti-zamuzh-za-didzhital-millionera-zhenya-kujda-osvaivaet-san-francisko&quot;&gt;интервью с Tatler&lt;/a&gt;. “Если бы существовала идеально подстроенная под твою личность разговаривающая машина, мы бы все с ней разговаривали. Это нормально и естественно.”&lt;/p&gt;
+
+&lt;p&gt;А какое зеркало создадите вы? Умеете ли подстраиваться под личности других людей в общении? А много ли людей в вашем окружении, которые дают вам возможность безопасного самовыражения? А много ли людей, которым есть чему поучиться у этого робота?&lt;/p&gt;</content><author><name>Anna Liednikova</name></author><category term="post" /><category term="чатбот" /><summary type="html">Помните фильм “Она” 2013 года? Когда герой влюбился в собственную операционную систему? Что ж, это будущее уже рядом, а при желании вы можете испытать его на себе, пообщавшись с Replika. Однажды, пережив смерть очень близкого для себя человека, Евгения Куйда решила создать чатбот, который мог бы стать максимально близкой копией его.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://127.0.0.1:4000/assets/img/posts/replica.png" /><media:content medium="image" url="http://127.0.0.1:4000/assets/img/posts/replica.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Welcome to Anna Liednikova page</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="http://127.0.0.1:4000">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="PhD student developping healthcare chatbot">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content="0QBzxkyjm0ivqEQ8e8_5IUlfBaJbjQnUxCQloUFb85k"><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="/_posts/2020-11-22-dvojnoj-vnutrennij-kritik-chatbota.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Внутренний критик - это та часть психики, которая была заложена нашими родителями, оценивающими наши действия. "Какой молодец!" или "Куда полез, с ума сошел?!". Поэтому очень часто внутренним критиком называют нашим внутренним родителем. Существует ли такой родитель у чатбота и почему их может быть два?">
+<meta property="og:image" content="/assets/img/posts/actor-critic.png">
+<meta property="og:image:alt" content="">
+<meta property="og:description" content="Внутренний критик - это та часть психики, которая была заложена нашими родителями, оценивающими наши действия. "Какой молодец!" или "Куда полез, с ума сошел?!". Поэтому очень часто внутренним критиком называют нашим внутренним родителем. Существует ли такой родитель у чатбота и почему их может быть два?">
+<meta property="og:site_name" content="двойной внутренний критик чатбота">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Anna Liednikova">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:url" content="/_posts/2020-11-22-dvojnoj-vnutrennij-kritik-chatbota.html">
+<meta name="twitter:title" content="Внутренний критик - это та часть психики, которая была заложена нашими родителями, оценивающими наши действия. "Какой молодец!" или "Куда полез, с ума сошел?!". Поэтому очень часто внутренним критиком называют нашим внутренним родителем. Существует ли такой родитель у чатбота и почему их может быть два?">
+<meta name="twitter:description" content="Внутренний критик - это та часть психики, которая была заложена нашими родителями, оценивающими наши действия. "Какой молодец!" или "Куда полез, с ума сошел?!". Поэтому очень часто внутренним критиком называют нашим внутренним родителем. Существует ли такой родитель у чатбота и почему их может быть два?">
+<meta name="twitter:image" content="/assets/img/posts/actor-critic.png">
+<meta name="twitter:image:alt" content="">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body>
+    <nav class="navbar navbar-expand-lg text-white" style="background-color:#00334e;">
+  <a class="navbar-brand text-white" href="/index.html"><h4 style="font-family:Courgette;">Welcome to Anna Liednikova page</h4></a>
+  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-caret-down"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        
+              <li class="nav-item">
+                  <a href="about.html" class="nav-link text-white">About</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="/assets/pdf/vitae.pdf" class="nav-link text-white">CV</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="contact.html" class="nav-link text-white">Contact</a>
+              </li>
+        
+    </ul>
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item">
+        <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: White;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/aliednik">
+            <span style="color: White;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+    
+        <a href="https://github.com/pasana">
+            <span style="color: White;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+        <a href="https://www.linkedin.com/in/anna-liednikova">
+            <span style="color: White;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+    
+        <a href="https://www.researchgate.net/profile/https://www.researchgate.net/profile/Anna-Liednikova">
+            <span style="color: White;">
+                <i class="fab fa-researchgates fa-lg"></i></a>
+            </span>
+
+    
+        <a href="https://www.googlescholar.com/in/">
+            <span style="color: White;">
+                <i class="fab fa-googlescholar fa-lg"></i></a>
+            </span>
+    <i> &nbsp;&nbsp; </i>
+
+</span>
+
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ask me anything" aria-label="Search">
+      <button class="btn btn-light btn-sm my-2 my-sm-0" type="submit">Search</button>
+    </form>  -->
+  </div>
+</nav>
+
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      
+      <div class="card mb-3 border-0">
+          <div class="card-body">
+            <p class="card-text">
+                <!-- Blog Post -->
+  <div class="card"  style="max-width: 100%;">
+    <!-- <img class="card-img-top" style="max-height: 200px" src=/assets/img/posts/actor-critic.png alt=> -->
+    <div class="card-body">
+      <h1 class="card-title" style="font-family:Courgette;">двойной внутренний критик чатбота</h1>
+      
+      <p><i>Written By: Anna Liednikova</i></p>
+      
+      <p class="card-text"><p>Чтобы с нуля обучить чатбота хорошего качества, как правило, нужно либо много данных, либо очень ограниченный контекст. Ведь его разработчики заинтересованны в успешном выполнении задач чатботом, но редко заинтересованы в детальном описании контекста, где все возможные ситуации будут рассмотрены и предусмотрены. Более эффективным является разработка такого чатбота, который потихоньку и сам разберется в предложенном контексте.</p>
+
+<p>За большинством интересных чатботов скрывается алгоритмы подкрепления (Reinforcement learning), которые имеют свое начало в поведенческой биологии. Очень грубо и просто их можно свести к следующему: есть краткосрочные вознаграждения, а есть долгосрочные, а модель учится определять стратегии, которые балансируют между этими вознаграждениями. Такая своего рода дрессировка на долгосрочную цель.</p>
+
+<p>Говорить на эту тему можно много и долго, но сегодня я бы хотела остановиться только на одной концепции: Исполнитель-Критик (Actor-Critic).</p>
+
+<p><img src="/assets/img/posts/actor-critic.png" alt="Actor - Critic" /></p>
+
+<p>Суть в том, чтобы разделить модель на две части: одну для вычисления действий на основе состояния, а другую - для получения значений результативности этого  действия. Как пример, отношения мальчик-мама из <a href="https://theaisummer.com/Actor_critics/">этой замечательной статьи</a>:</p>
+
+<blockquote>
+  <p>Ребенок (исполнитель) постоянно пробует новое и исследует окружающую его среду. Он ест свои игрушки, прикасается к раскаленной духовке, бьется головой об стену (почему бы и нет?). Его мать (критик) наблюдает за ним и либо критикует, либо делает комплименты. Ребенок слушает, что ему говорит мать, и корректирует свое поведение. По мере того, как ребенок растет, он узнает, какие действия являются плохими или хорошими, и, по сути, учится играть в игру, называемую жизнью.</p>
+</blockquote>
+
+<p>Исполнитель принимает на вход состояние и выводит наилучшее действие. По сути, он контролирует поведение агента, изучая оптимальную политику. Критик, с другой стороны, оценивает действие, вычисляя функцию ценности (на основе существующей системе ценностей). Эти две модели участвуют в игре, где со временем они обе становятся лучше в своей роли. В результате общая архитектура научится играть в игру более эффективно, чем два метода по отдельности.</p>
+
+<p>Мотивацией к написанию данного поста послужила новая статья <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.75/">Actor-Double-Critic: Incorporating Model-Based Critic for Task-Oriented Dialogue Systems</a>. В ней авторы показали, что для улучшения диалога, нужно использовать не одного критика, а целых двоих! Один выдвигает свое суждение относительно своих знаний о системе (model-based), а другой - на основе окружения и перспектив (model-free). Такой вот взгляд из прошлого и взгляд из будущего.</p>
+
+<p>Создание такой модели помогло им увеличить успешность чатбота по заказыванию столика в ресторане до 80%. В конце статьи находится пример диалога до и после, с которым я предлагаю вам ознакомится.</p>
+
+<p>А вы как часто взвешиваете решения со своим внутренним критиком? На основе какой информации делаете выводы о результативности ваших действий? На основе существующего опыта? Или желаемых перспектив? Насколько независимы эти суждения?</p>
+</p>
+      
+    </div>
+    <div class="card-footer text-muted">
+      Posted on 2020-11-22 20:01:21 -0400 
+    </div>
+  </div>
+
+  <!-- Bottom Widget -->
+  <div class="card mt-2">
+    <h5 class="card-header">All Articles</h5>
+    <div class="card-body">
+    
+          <li><a href="/post/2020/11/23/dvojnoj-vnutrennij-kritik-chatbota.html">двойной внутренний критик чатбота</a></li>
+    
+          <li><a href="/post/2020/11/18/chatboty-i-rolevye-modeli.html">чатботы и ролевые модели</a></li>
+    
+          <li><a href="/post/2020/11/14/zdravyj-smysl-u-chatbota.html">здравый смысл у чатбота</a></li>
+    
+          <li><a href="/post/2020/11/14/toksichnye-chatboty.html">токсичные чатботы</a></li>
+    
+          <li><a href="/post/2020/11/12/chatboty-i-ehmpatiya.html">чатботы и эмпатия</a></li>
+    
+          <li><a href="/post/2020/11/08/istoriya-lichnosti-chatbota.html">история личности чатбота</a></li>
+    
+          <li><a href="/post/2020/11/07/druzya-chatboty.html">друзья-чатботы</a></li>
+    
+    </div>
+  </div>
+
+<!-- Categories Widget -->
+<div class="card mt-2">
+  <h5 class="card-header">Categories</h5>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="list-unstyled mb-0">
+          
+          <li>
+            <a href="#" class="btn btn-sm mt-1 mb-1 text-white" style="background-color:#00334e">чатбот</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            </p>
+            
+              <p class="card-text"><small class="text-muted">Last updated 2020-11-22 20:01:21 -0400</small></p>
+            
+        </div>
+      </div>
+      
+    </div>
+    <div class="dumbarton-spacer"></div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
+        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
+    </p>
+    <p class="navbar-text pull-right">
+            <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/aliednik">
+            <span style="color: Black;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
+            </span>
+    
+        <a href="https://github.com/pasana">
+            <span style="color: Black;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+        <a href="https://www.linkedin.com/in/anna-liednikova">
+            <span style="color: Black;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
+ 
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
+</html>
