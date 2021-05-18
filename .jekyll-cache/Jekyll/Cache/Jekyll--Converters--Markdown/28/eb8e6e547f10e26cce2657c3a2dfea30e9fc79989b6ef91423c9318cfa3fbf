@@ -1,0 +1,30 @@
+I"R<p>Recently, the topic of emotional intelligence has become popular and the issue of the importance of empathy has been raised. On almost any social network, help could be found on how to identify emotions and express support for the interlocutor. But do you think that only people learn this? Chatbots too!</p>
+
+<p>It is believed that the first emotional chatbot was <a href="https://www.botlibre.com/bot.">PARRY</a>, Which tried to simulate a paranoid schizophrenic.</p>
+
+<p>Then in 2014, the Chinese launched XiaoIce. If suddenly you can speak Mandarin, then you can chat <a href="https://www.msxiaobing.com/">here</a>. Well, they launched it and the popularity is growing, the business is expanding.</p>
+
+<p>5 years later, in 2019, when the popularity of social and empathic chatbots began to grow and there were more competitors, the authors of XiaoIce decided not to stand aside and finally publish <a href="https://arxiv.org/pdf/1812.08989 .pdf">details of their product</a>.</p>
+
+<p>What actually caused this popularity?</p>
+
+<p>In 2018, Hao Zhou and his partners published an <a href="https://arxiv.org/abs/1704.01074">article</a>, in which he modestly noted that here we are generating everything and generating text, but why does no one think about emotions? Indeed, one and the same phrase can be answered in very different ways, depending on our reactions.</p>
+
+<p><img src="/assets/img/posts/emotion-transfer.png" /></p>
+
+<p>And then it started! It has already been quoted 332 times by the developers of “emotional talkers”. Even the giants have pulled up.</p>
+
+<p>Just six months later, Facebook published a new dataset Empathetic Dialogues with 25,000 dialogs with 19 emotions! So try not to pry and name all 19? Although it is worth looking at the plate below and nothing supernatural: all these emotions are really familiar to us.</p>
+
+<p><img src="/assets/img/posts/emotions.png" /></p>
+
+<p>Such a large amount of data and markup allowed chatbots to take another step forward: now they not only change their text to suit the emotion, but also choose the correct response to the emotion of the interlocutor.</p>
+
+<p><img src="/assets/img/posts/empadialogs.png" /></p>
+
+<p>A couple of months later, Zhaojiang Lin and the company decided to quickly train their chatbot CAiRE, which you can chat with here at <a href="http://eez115.ece.ust.hk:8899/">this link</a>. The problem is that the dataset and models are not perfect and there are still situations in which the chatbot does not give the correct answer. So why not let users fix it? And in real life, by the way, this can lead to a conflict.</p>
+
+<p>This dataset is now used in many chatbots, including Facebook’s latest open source state-of-the-art <a href="https://venturebeat.com/2020/04/29/facebook-open-sources-blender-a-chatbot-that-people-say-feels-more-human/">Blender</a>. But about him some other time.</p>
+
+<p>This is how chatbots learned to be emotional and empathic! Do you study too? Or maybe you already know how? What emotions are you meeting? Will you define all 19? And how much does your speech change when the emotion is out of sync with the situation?</p>
+:ET

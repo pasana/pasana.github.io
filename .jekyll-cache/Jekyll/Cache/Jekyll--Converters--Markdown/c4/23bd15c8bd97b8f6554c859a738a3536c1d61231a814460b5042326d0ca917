@@ -1,0 +1,23 @@
+I"�<p>Most people strive for an understandable and predictable environment. The inconsistency of our interlocutor causes distrust and apprehension. Although, there are some [charming women] (https://www.kobo.com/us/en/ebook/a-charming-woman) like Jerome K. Jerome who manage to fool everyone and leave them happy.</p>
+
+<p>Chatbots coped with this task very sadly, neither inspiring confidence, nor leaving them satisfied. In 2016, trying to teach chatbots to be consistent in conversation, researchers came up with a narrower and more interesting problem - the lack of a consistent personality. (<a href="https://www.aclweb.org/anthology/P16-1094/">A Persona-Based Neural Conversation Model</a>).</p>
+
+<p>When it comes to completing a specific task, the personality of the chatbot is not that important. Well, what do you care about his preferences if you just need to book a hotel or buy a plane ticket? What’s more, researchers at Heriot-Watt University have shown that these social interactions may not generate approval at all in the work environment. (<a href="https://dl.acm.org/doi/10.1145/3383652.3423889">It’s Good to Chat? Evaluation and Design Guidelines for Combining Open-Domain Social Conversation with Task-Based Dialogue in Intelligent Buildings</a>)</p>
+
+<p>But in the circle of social bots in 2018, researchers at Facebook AI Reserach and the Montreal Institute for Learning Algorithms decided to put an end to this. They published an article Personalizing Dialogue Agents: I have a dog, do you have pets too? which proposed a new dataset for training chatbots with a stable and consistent personality.</p>
+
+<p><img src="/assets/img/posts/happydog.png" alt="Image Credit: Jessica Peterson/Tetra images/GettyImages" /></p>
+
+<p>The fact is that before that, the models were trained on very heterogeneous data, because the dialogues were created by different people, which means with different preferences and conversation styles.</p>
+
+<p>So how do they shape personality, you ask? Well, so that without any abstruse terms and for a wide audience.</p>
+
+<p>It’s very simple! With 5 simple sentences.
+ <img src="/assets/img/posts/personachat.png" alt="Взято из Personalizing Dialogue Agents: I have a dog, do you have pets too?" /></p>
+
+<p>The goal of the authors was to create natural and descriptive profiles containing typical topics of human interest that the speaker might bring up in conversation. In the image above, you can see examples of such profiles and dialogue in which people try to get to know each other better.</p>
+
+<p>So far, the article has been quoted 353 times. It’s hard to count how many social chatbots have been created based on this data. One is Facebook’s latest open source state-of-the-art. - <a href="https://venturebeat.com/2020/04/29/facebook-open-sources-blender-a-chatbot-that-people-say-feels-more-human/">Blender</a>. But we’ll talk more about him next time.</p>
+
+<p>Would you be interested in communicating with a bot with a certain personality, with certain preferences and knowledge? How many sentences would you describe your persona? How many of them will you show to a stranger? How much do they differ from one interlocutor to another?</p>
+:ET

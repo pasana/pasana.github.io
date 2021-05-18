@@ -1,0 +1,22 @@
+I"<p>To train a good quality chatbot from scratch usually requires either a lot of data or a very limited context. After all, its developers are interested in the successful completion of tasks by the chatbot, but are rarely interested in a detailed description of the context, where all possible situations will be considered and provided for. It is more efficient to develop a chatbot that will slowly figure it out in the proposed context.</p>
+
+<p>Behind most of the interesting chatbots are Reinforcement learning algorithms that have their origins in behavioral biology. Very roughly and simply, they can be summarized as follows: there are short-term rewards, and there are long-term ones, and the model learns to identify strategies that balance between these rewards. This kind of training for a long-term goal.</p>
+
+<p>You can talk a lot and for a long time on this topic, but today I would like to dwell on only one concept: Actor-Critic.</p>
+
+<p><img src="/assets/img/posts/actor-critic.png" alt="Actor - Critic" /></p>
+
+<p>The point is to split the model into two parts: one to calculate the actions based on the state, and the other to get the values of the effectiveness of that action. As an example, the boy-mom relationship from <a href="https://theaisummer.com/Actor_critics/">this great article</a>:</p>
+
+<blockquote>
+  <p>Ребенок (исполнитель) постоянно пробует новое и исследует окружающую его среду. Он ест свои игрушки, прикасается к раскаленной духовке, бьется головой об стену (почему бы и нет?). Его мать (критик) наблюдает за ним и либо критикует, либо делает комплименты. Ребенок слушает, что ему говорит мать, и корректирует свое поведение. По мере того, как ребенок растет, он узнает, какие действия являются плохими или хорошими, и, по сути, учится играть в игру, называемую жизнью.</p>
+</blockquote>
+
+<p>Исполнитель принимает на вход состояние и выводит наилучшее действие. По сути, он контролирует поведение агента, изучая оптимальную политику. Критик, с другой стороны, оценивает действие, вычисляя функцию ценности (на основе существующей системе ценностей). Эти две модели участвуют в игре, где со временем они обе становятся лучше в своей роли. В результате общая архитектура научится играть в игру более эффективно, чем два метода по отдельности.</p>
+
+<p>Мотивацией к написанию данного поста послужила новая статья <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.75/">Actor-Double-Critic: Incorporating Model-Based Critic for Task-Oriented Dialogue Systems</a>. В ней авторы показали, что для улучшения диалога, нужно использовать не одного критика, а целых двоих! Один выдвигает свое суждение относительно своих знаний о системе (model-based), а другой - на основе окружения и перспектив (model-free). Такой вот взгляд из прошлого и взгляд из будущего.</p>
+
+<p>Создание такой модели помогло им увеличить успешность чатбота по заказыванию столика в ресторане до 80%. В конце статьи находится пример диалога до и после, с которым я предлагаю вам ознакомится.</p>
+
+<p>А вы как часто взвешиваете решения со своим внутренним критиком? На основе какой информации делаете выводы о результативности ваших действий? На основе существующего опыта? Или желаемых перспектив? Насколько независимы эти суждения?</p>
+:ET
