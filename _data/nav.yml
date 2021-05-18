@@ -10,5 +10,8 @@ links:
 - title: Contact
   url: contact.html
 
-- title: Blog
-  url: blog.html
+- title: Blog EN
+  url: blog_en.html
+
+- title: Blog RU
+  url: blog_ru.html

@@ -118,7 +118,14 @@ layout: default
                     {% for supervision in site.data.supervision %}
                       <li> <b> {{ supervision.student }} </b> ({{supervision.start_date}} - {{supervision.end_date}}): 
                         <p style="margin:0px;"> <b><i> {{supervision.title}} </i> </b> </p> 
-                        {{ supervision.student_type}}, {{ supervision.university }} <!-- , with co-supervision of {{ supervision.co_supervised}} -->
+                        {{ supervision.student_type}}, {{ supervision.university }} 
+                        {% if supervision.helping %}
+                        <p style="margin:0px;"> helping {{ supervision.helping }}
+                        {% endif %}
+                        {% if supervision.with_help %}
+                        <p style="margin:0px;"> with help of {{ supervision.with_help }}
+                        {% endif %}
+                        <!-- , with co-supervision of {{ supervision.co_supervised}} -->
                       </li>
                         {% endfor %}
                     </ul>
@@ -161,6 +168,19 @@ layout: default
                   </div>
                   {% endfor %}
             </div> 
+            {% elsif section.name == "Events" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
+                <ul>
+                    {% for event in site.data.events %}
+                      <li> <b> <a href={{event.url}}> {{ event.title }} </a> </b> 
+                        <p style="margin:0px;"> <i> {{event.role}} </i> </p> 
+                        {{ event.organiser}}, {{ event.year }} 
+                      </li>
+                        {% endfor %}
+                    </ul>
+
+              </div>
             {% endif %}
           {% endif %}
         {% endfor %}
