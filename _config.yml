@@ -21,7 +21,7 @@ image_alt: A minimalistic jekyll theme for academic    # image description
 # -----------SITE SETTINGS---------------#
 #========================================#: 
 author: John Doe 
-profile_image: /assets/img/avatar/cropped.jpg #/assets/img/avatar/avatar.jpeg 
+profile_image: /assets/img/avatar/fb.jpg #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet: 
 twitter: aliednik
