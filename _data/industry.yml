@@ -5,6 +5,9 @@
   description:
     - semantic classification
     - automated data expansion 
+    - dialog management
+    - response retrieval model
+    - developping intership topics
   start_date: February 2019
   end_date: ...
   image: /assets/img/icons/aliae.png
@@ -17,7 +20,7 @@
 - company: Jooble
   id: project2
   position: Data Scientist
-  location: Nancy, France
+  location: Kyiv, Ukraine
   description: 
     - multi language text topic classification; 
     - pairwise and pointwise ranking; 
@@ -33,7 +36,7 @@
 - company: Dataroot
   id: project3
   position: Intern -> Data Scientist -> Leader Data Scientist
-  location: Nancy, France
+  location: Kyiv, Ukraine
   description:
     - NLP text processing & analysis / information retrieval tasks / topic modeling
     - user behavior & path analysis using data mining techniques and graph theory

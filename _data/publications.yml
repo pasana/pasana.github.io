@@ -1,3 +1,8 @@
+- title: "Zero-Shot Clinical Questionnaire Filling From Human-Machine Interactions"
+  author: > Farnaz Ghassemi Toudeshki, Philippe Jolivet, Alexandre Durand-Salmon, Anna Liednikova
+  publisher: The 3rd Workshop on Machine Reading for Question Answering
+  year: 2021
+
 - title : "Gathering Information and Engaging the User COMBOBOT: A Task-Based, Serendipitous Dialog Model for Patient-Doctor Interactions"
   author : >
     Anna Liednikova, Philippe Jolivet, Alexandre Durand-Salmon, Claire Gardent

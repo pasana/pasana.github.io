@@ -1,10 +1,18 @@
+- student: Luc Brulin
+  title: Structuring the database of the conversational AI
+  student_type: M1 internship
+  university: Télécom Physique Strasbourg
+  helping: Philippe Jolivet
+  start_date: May 2021
+  end_date: September 2021
+
 - student: Abdelhak Zabour
   title: Forecasting user satisfaction using sentiment and emotion analysis
   student_type: M2 internship
   university: Master Sciences Cognitives
   with_help: Philippe Jolivet
   start_date: March 2021
-  end_date: Sep 2021
+  end_date: September 2021
 
 - student: Meziane Bellahmer
   title: Development french version of ComBot
@@ -12,31 +20,31 @@
   university: Master Sciences Cognitives
   helping: Philippe Jolivet
   start_date: February 2021
-  end_date: ...
+  end_date: May 2021
 
 - student: Farnaz Ghassemi
   title: Medical questionnaire filling from dialogue history
   student_type: alternance
   university: Master Sciences Cognitives
   with_help: Philippe Jolivet
-  start_date: Oct 2020
-  end_date: Sep 2021
+  start_date: October 2020
+  end_date: September 2021
 
 - student: Hadil Chebbi
   title: Target-based sentiment analysis for a medical chatbot
   student_type: 3A project
   university: Mines Nancy
   with_help: Claire Gardent
-  start_date: Oct 2020
-  end_date: Feb 2021
+  start_date: October 2020
+  end_date: February 2021
 
 - student: Farnaz Ghassemi
   title: Medical follow-up bot from forum conversations
   student_type: M1 internship
   university: Master Sciences Cognitives
   with_help: Philippe Jolivet
-  start_date: Oct 2020
-  end_date: Sep 2020
+  start_date: October 2020
+  end_date: September 2020
 
 - student: Aidos Sabdenov
   title: Intent classification for medical domain
@@ -44,5 +52,4 @@
   university: Master Sciences Cognitives
   helping: Philippe Jolivet
   start_date: March 2020
-  end_date: Aug 2020
-
+  end_date: August 2020
