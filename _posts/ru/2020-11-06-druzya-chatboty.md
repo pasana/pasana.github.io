@@ -4,7 +4,6 @@ title:  "друзья-чатботы"
 description: "Много ли у вас друзей? А как насчет виртуальных? Позвольте представить вам чатбот Replika и то, чему она может научить"
 date: 2020-11-06 20:01:21 -0400
 type: card-img-top
-categories: чатбот
 image: /assets/img/posts/replica.png
 caption: ""
 last-updated: 2020-11-06 20:01:21 -0400

@@ -5,11 +5,9 @@ date: 2021-10-04
 ---
 ## Hi,
 
-I am PhD student at ALIAE start-up and LORIA working on Human-Machine Dialog in the Medical Domain based in Nancy, France. I've been working on the similar topic with the same team during 3rd year project and the internship of Erasmus+ exchange program in Mines Nancy supervised by Philippe Jolivet and prof. Claire Gardent.
+I am a research engineer at ALIAE start-up based in Nancy, France. My current focus is graph-based retrieval models and evaluation framework for the dialogue system based on the whole performance and its components.
 
-I have received my master degree in Data Mining in Project Management from Igor Sikorsky Kyiv Polytechnic Institute and IASA department as well as bachelor degree in System Analysis.
-
-During my studies I succeeded to gain industrial experience, especially in data mining, machine learning, natural language processing & understanding. 
+My journey with ALIAE started during Erasmus+ exchange program in Mines Nancy with 3rd year project about semantic corpus augumentation which further developped into internship. Later, I completed PhD on Human-Machine Dialog in the Medical Domain under academic supervision of Claire Gardent at LORIA and Lorraine University and industrial supervision of Phlippe Jolivet at ALIAE.
 <a href="/about.html" class="highlighted">Read More</a>
 
 

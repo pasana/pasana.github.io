@@ -1,12 +1,14 @@
 - company: ALIAE
   id: project1
-  position: Intern -> PhD Researcher
+  position: Intern -> PhD Researcher -> Research Engineer
   location: Nancy, France
   description:
     - semantic classification
     - automated data expansion 
     - dialog management
+    - graph-based conversational flow
     - response retrieval model
+    - dialogue system evalution 
     - developping intership topics
   start_date: February 2019
   end_date: ...

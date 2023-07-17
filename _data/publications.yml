@@ -1,8 +1,21 @@
+- title: Human-Machine Dialogue in the Medical Field. Using Dialog to Collect Important Patient Information
+  author: Anna Liednikova
+  publisher: Doctoral Thesis
+  year: 2022
+  url: https://www.researchgate.net/profile/Anna-Liednikova/publication/366165638_Human-Machine_Dialogue_in_the_Medical_Field_Using_Dialog_to_Collect_Important_Patient_Information/links/63a1c94e41663a23c07131c9/Human-Machine-Dialogue-in-the-Medical-Field-Using-Dialog-to-Collect-Important-Patient-Information.pdf
+
+- title: "Exploring the Influence of Dialog Input Format for Unsupervised Clinical Questionnaire Filling"
+  author: Farnaz Ghassemi Toudeshki, Anna Liednikova, Philippe Jolivet, Claire Gardent
+  publisher: Proceedings of the 13th International Workshop on Health Text Mining and Information Analysis (LOUHI)
+  year: 2022
+  url: https://aclanthology.org/2022.louhi-1.1/
+
 - title: "Zero-Shot Clinical Questionnaire Filling From Human-Machine Interactions"
   author: >
     Farnaz Ghassemi Toudeshki, Philippe Jolivet, Alexandre Durand-Salmon, Anna Liednikova
   publisher: The 3rd Workshop on Machine Reading for Question Answering
   year: 2021
+  url: https://aclanthology.org/2021.mrqa-1.5/
 
 - title : "Gathering Information and Engaging the User COMBOBOT: A Task-Based, Serendipitous Dialog Model for Patient-Doctor Interactions"
   author : >
